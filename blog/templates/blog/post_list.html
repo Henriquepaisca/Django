@@ -8,16 +8,19 @@
 
         </div>
 
-        <div>
+{% for post in posts %}
+      <div>
+
           <p> Publicado: 22.05.2016, 11:20</p>
           <h2><a href="">My first post</a></h2>
-          <p> Post teste</p>
-        </div>
+          <p>{{ Post.text|linebreaks}} </p>
+      </div>
+{% endfor %}
 
-        <div>
+
             <p> Publicado: 22.05.2016, 11:27</p>
             <h2><a href="">My second post</a></h2>
             <p>Post teste 2</p>
-        </div>
+
     </body>
 </html>
